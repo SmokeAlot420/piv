@@ -1,8 +1,8 @@
 {
   "plugins": [{
-    "name": "piv",
+    "name": "ralph-piv",
     "source": ".",
-    "description": "Solo AI dev workflow — deep analysis, context-rich plans, independent validation",
+    "description": "Ralph PIV — Solo AI dev workflow with deep analysis, context-rich plans, independent validation",
     "version": "1.0.0"
   }]
 }

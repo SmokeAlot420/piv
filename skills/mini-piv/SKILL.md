@@ -1,12 +1,12 @@
 ---
 name: mini-piv
-description: "Mini PIV — Lightweight single-phase builder. No PRD required, discovery-driven. Quick feature building with the full PIV quality pipeline. Triggers on: mini-piv, quick build, feature, small feature."
+description: "Mini Ralph PIV — Lightweight single-phase builder. No PRD required, discovery-driven. Quick feature building with the full Ralph PIV quality pipeline. Triggers on: mini-piv, quick build, feature, small feature."
 disable-model-invocation: true
 allowed-tools: Task, TaskCreate, TaskUpdate, TaskList, Read, Write, Bash, Glob, Grep, AskUserQuestion
 argument-hint: "[feature-name] [project-path]"
 ---
 
-# Mini PIV — Lightweight Feature Builder
+# Mini Ralph PIV — Lightweight Feature Builder
 
 ## Arguments: $ARGUMENTS
 
@@ -24,9 +24,9 @@ PROJECT_PATH = $ARGUMENTS[1] or current working directory
 
 ---
 
-## Resolve PIV Plugin Directory
+## Resolve Ralph PIV Plugin Directory
 
-Before proceeding, determine the absolute path to the PIV plugin:
+Before proceeding, determine the absolute path to the Ralph PIV plugin:
 ```bash
 find /home -maxdepth 4 -name "plugin.json" -path "*/piv/.claude-plugin/*" 2>/dev/null | head -1 | sed 's|/.claude-plugin/plugin.json||'
 ```
@@ -38,7 +38,7 @@ Store the result as `PIV_DIR`. All reference docs and templates are under this d
 
 > "When you just want to build something without writing a PRD first."
 
-Mini PIV is the lightweight sibling of the full `/piv` orchestrator. Same quality pipeline (Execute → Validate → Debug), but starts from a quick conversation instead of a PRD.
+Mini Ralph PIV is the lightweight sibling of the full `/piv` orchestrator. Same quality pipeline (Execute → Validate → Debug), but starts from a quick conversation instead of a PRD.
 
 **You are the orchestrator** — stay lean at ~15% context, spawn fresh sub-agents for heavy lifting.
 
@@ -48,7 +48,7 @@ Mini PIV is the lightweight sibling of the full `/piv` orchestrator. Same qualit
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│              MINI PIV ORCHESTRATOR                             │
+│           MINI RALPH PIV ORCHESTRATOR                          │
 ├──────────────────────────────────────────────────────────────┤
 │ 1. DISCOVERY (Orchestrator)                                   │
 │    Ask user 3-5 questions conversationally                    │
@@ -147,7 +147,7 @@ feature:
 Spawn a `general-purpose` sub-agent with this prompt:
 
 ```
-MINI PIV: RESEARCH & PRP GENERATION
+MINI RALPH PIV: RESEARCH & PRP GENERATION
 ==========================================
 
 You are generating a PRP for a lightweight, single-phase feature. You have fresh context — use it wisely.
@@ -204,7 +204,7 @@ Output PRP to: {PROJECT_PATH}/PRPs/mini-{FEATURE_NAME}.md
 Use the Task tool with `subagent_type: "piv-executor"`:
 
 ```
-EXECUTOR MISSION - Mini PIV
+EXECUTOR MISSION - Mini Ralph PIV
 ============================
 
 Read the PRP execution process doc at: {PIV_DIR}/skills/mini-piv/references/execute-prp.md
@@ -225,7 +225,7 @@ Output EXECUTION SUMMARY with Status, Files, Tests, Issues.
 Use the Task tool with `subagent_type: "piv-validator"`:
 
 ```
-VALIDATOR MISSION - Mini PIV
+VALIDATOR MISSION - Mini Ralph PIV
 =============================
 
 PRP Path: {PROJECT_PATH}/PRPs/mini-{FEATURE_NAME}.md
@@ -249,7 +249,7 @@ Output VERIFICATION REPORT with Grade (PASS/GAPS_FOUND/HUMAN_NEEDED), Checks, Ga
 Spawn debugger using `subagent_type: "piv-debugger"`:
 
 ```
-DEBUGGER MISSION - Mini PIV - Iteration {I}
+DEBUGGER MISSION - Mini Ralph PIV - Iteration {I}
 ============================================
 
 Project: {PROJECT_PATH}
@@ -290,7 +290,7 @@ feat(mini): implement {FEATURE_NAME}
 - {bullet point 2 - key thing built}
 - {bullet point 3 - key thing built}
 
-Built with PIV - https://github.com/SmokeAlot420/piv
+Built with Ralph PIV - https://github.com/SmokeAlot420/piv
 EOF
 )"
 ```
@@ -300,7 +300,7 @@ EOF
 ## Completion Summary
 
 ```
-## MINI PIV COMPLETE
+## MINI RALPH PIV COMPLETE
 
 Feature: {FEATURE_NAME}
 Project: {PROJECT_PATH}

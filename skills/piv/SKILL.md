@@ -1,12 +1,12 @@
 ---
 name: piv
-description: "PIV — Plan-Implement-Validate. Solo AI dev workflow with deep analysis, context-rich plans, and independent validation. Spawns specialized sub-agents for execution, validation, and debugging. Triggers on: piv, build, implement, execute."
+description: "Ralph PIV — Plan-Implement-Validate. Solo AI dev workflow with deep analysis, context-rich plans, and independent validation. Spawns specialized sub-agents for execution, validation, and debugging. Triggers on: piv, build, implement, execute."
 disable-model-invocation: true
 allowed-tools: Task, TaskCreate, TaskUpdate, TaskList, Read, Write, Bash, Glob, Grep
 argument-hint: "[PRD_PATH|PROJECT_PATH] [START_PHASE] [END_PHASE]"
 ---
 
-# PIV Orchestrator
+# Ralph PIV Orchestrator
 
 > Plan-Implement-Validate
 
@@ -61,9 +61,9 @@ When PRD_PATH is specified, scan the PRD for phase sections:
 
 ---
 
-## Resolve PIV Plugin Directory
+## Resolve Ralph PIV Plugin Directory
 
-Before proceeding, determine the absolute path to the PIV plugin:
+Before proceeding, determine the absolute path to the Ralph PIV plugin:
 ```bash
 # Find the PIV plugin root (parent of .claude-plugin/)
 find /home -maxdepth 4 -name "plugin.json" -path "*/piv/.claude-plugin/*" 2>/dev/null | head -1 | sed 's|/.claude-plugin/plugin.json||'
@@ -257,7 +257,7 @@ git diff --stat
 
 Create semantic commit:
 - Format: `feat/fix/refactor(scope): description`
-- Add: `Built with PIV - https://github.com/SmokeAlot420/piv`
+- Add: `Built with Ralph PIV - https://github.com/SmokeAlot420/piv`
 
 ### Step 6: Update Progress
 
@@ -292,7 +292,7 @@ Ask user: "Phase N failed validation after 3 fix attempts. Persistent issues: [l
 
 When all phases are complete, output:
 ```
-## PIV COMPLETE
+## RALPH PIV COMPLETE
 
 Phases Completed: START to END
 Total Commits: N
@@ -312,7 +312,7 @@ All phases successfully implemented and validated.
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                    PIV ORCHESTRATOR                            │
+│                 RALPH PIV ORCHESTRATOR                         │
 │              Plan-Implement-Validate                          │
 ├──────────────────────────────────────────────────────────────┤
 │ IF NO PRD FOUND:                                              │

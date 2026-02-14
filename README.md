@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center"><b>PIV</b></h1>
+  <h1 align="center"><b>Ralph PIV</b></h1>
   <p align="center"><i>Plan-Implement-Validate</i></p>
   <p align="center">Solo AI dev workflow for Claude Code. Deep analysis, context-rich plans, independent validation.</p>
 </p>
@@ -20,7 +20,7 @@
 
 I kept running into the same problem: AI agents that half-build things. They'd get 80% there, then miss a requirement, break a test, or just... guess at patterns instead of looking at the codebase.
 
-PIV fixes that by splitting the work into specialized roles:
+Ralph PIV fixes that by splitting the work into specialized roles:
 
 - A **researcher** that actually reads your codebase and builds context-rich plans
 - An **executor** that implements from those plans
@@ -58,7 +58,7 @@ claude --plugin-dir ./piv
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                      PIV ORCHESTRATOR                         │
+│                   RALPH PIV ORCHESTRATOR                       │
 ├──────────────────────────────────────────────────────────────┤
 │  1. Discover / Load PRD                                       │
 │  2. Spawn RESEARCHER → codebase analysis + PRP generation     │

@@ -1,4 +1,4 @@
-# PIV — Plan-Implement-Validate
+# Ralph PIV — Plan-Implement-Validate
 
 Solo AI dev workflow plugin for Claude Code. All-markdown — skill definitions, agent defs, process docs, and templates. No build system, no tests, no application code.
 
@@ -91,7 +91,7 @@ model: inherit
 - **Sub-agents get fresh context** — orchestrator stays lean (~15% context)
 - **Sub-agents get absolute paths** — all reference/template paths use `{PIV_DIR}` prefix
 - **Flat agent hierarchy** — sub-agents cannot spawn sub-agents
-- **PIV branding in commits** — `Built with PIV - https://github.com/SmokeAlot420/piv`
+- **Ralph PIV branding in commits** — `Built with Ralph PIV - https://github.com/SmokeAlot420/piv`
 
 ## Usage
 
