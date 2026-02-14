@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/SmokeAlot420/piv/stargazers"><img src="https://img.shields.io/github/stars/SmokeAlot420/piv?style=flat-square" alt="GitHub Stars"></a>
-  <a href="https://github.com/SmokeAlot420/piv/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License"></a>
+  <a href="https://github.com/SmokeAlot420/ralph-piv/stargazers"><img src="https://img.shields.io/github/stars/SmokeAlot420/ralph-piv?style=flat-square" alt="GitHub Stars"></a>
+  <a href="https://github.com/SmokeAlot420/ralph-piv/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License"></a>
   <img src="https://img.shields.io/badge/Claude_Code-plugin-orange?style=flat-square" alt="Claude Code Plugin">
 </p>
 
@@ -39,7 +39,7 @@ Each agent gets fresh context and specific instructions. No drift, no hallucinat
 
 ```bash
 # Clone
-git clone https://github.com/SmokeAlot420/piv.git
+git clone https://github.com/SmokeAlot420/ralph-piv.git
 
 # Use as Claude Code plugin
 claude --plugin-dir ./piv

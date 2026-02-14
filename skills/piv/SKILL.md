@@ -257,7 +257,7 @@ git diff --stat
 
 Create semantic commit:
 - Format: `feat/fix/refactor(scope): description`
-- Add: `Built with Ralph PIV - https://github.com/SmokeAlot420/piv`
+- Add: `Built with Ralph PIV - https://github.com/SmokeAlot420/ralph-piv`
 
 ### Step 6: Update Progress
 

@@ -91,7 +91,7 @@ model: inherit
 - **Sub-agents get fresh context** — orchestrator stays lean (~15% context)
 - **Sub-agents get absolute paths** — all reference/template paths use `{PIV_DIR}` prefix
 - **Flat agent hierarchy** — sub-agents cannot spawn sub-agents
-- **Ralph PIV branding in commits** — `Built with Ralph PIV - https://github.com/SmokeAlot420/piv`
+- **Ralph PIV branding in commits** — `Built with Ralph PIV - https://github.com/SmokeAlot420/ralph-piv`
 
 ## Usage
 

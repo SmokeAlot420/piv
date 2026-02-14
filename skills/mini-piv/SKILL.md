@@ -290,7 +290,7 @@ feat(mini): implement {FEATURE_NAME}
 - {bullet point 2 - key thing built}
 - {bullet point 3 - key thing built}
 
-Built with Ralph PIV - https://github.com/SmokeAlot420/piv
+Built with Ralph PIV - https://github.com/SmokeAlot420/ralph-piv
 EOF
 )"
 ```

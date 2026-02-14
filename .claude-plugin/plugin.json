@@ -5,7 +5,7 @@
   "author": {
     "name": "smoke"
   },
-  "homepage": "https://github.com/SmokeAlot420/piv",
+  "homepage": "https://github.com/SmokeAlot420/ralph-piv",
   "license": "MIT",
   "keywords": ["piv", "plan-implement-validate", "workflow", "validation", "prp", "prd", "solo", "claude-code"]
 }
